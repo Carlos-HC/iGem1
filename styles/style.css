@@ -1,0 +1,70 @@
+.navbar{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #183c3c;
+    padding: 8px 0px  ;
+    z-index: 999999;
+    box-shadow: 0px 2px 19px #00000059;
+    transition: 0.4s;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.nav-item{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    padding-right: 20px;
+    height: 100%;
+    width: max-content;
+    padding: 0 15px;
+    position: relative;
+}
+
+.nav-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #52b968;
+    color: #52b968;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    text-justify: center;
+    transform: scaleX(0) translate(-50%,0);
+    transform-origin: left;
+    transition: 0.3s;
+}
+
+.nav-item:hover::after{
+    transform: scaleX(1) translate(-50%,0);
+}
+
+ body{
+    background-image: url(../images/equipo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+ }
+
+ .bodyChiquito{
+    width: 100%;
+    height: 100%;
+    background-color: #022408;
+    opacity: 60%;
+    position:absolute;
+ }
